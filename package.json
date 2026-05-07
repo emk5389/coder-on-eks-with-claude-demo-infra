@@ -2,7 +2,9 @@
   "name": "coder-and-claude-on-eks-demo-infra",
   "version": "0.1.0",
   "private": true,
-  "bin": { "infra": "bin/app.js" },
+  "bin": {
+    "infra": "bin/app.js"
+  },
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
@@ -20,6 +22,7 @@
     "typescript": "^5.4.0"
   },
   "dependencies": {
+    "@aws-cdk/lambda-layer-kubectl-v30": "^2.0.4",
     "aws-cdk-lib": "^2.140.0",
     "constructs": "^10.3.0"
   }
